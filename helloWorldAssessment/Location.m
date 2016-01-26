@@ -1,5 +1,5 @@
 //
-//  Locations.m
+//  Location.m
 //  helloWorldAssessment
 //
 //  Created by Chris Long on 1/26/16.

@@ -20,8 +20,10 @@
 		15CF75291C57794000363A0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CF75281C57794000363A0D /* CoreLocation.framework */; };
 		15CF752F1C577C0E00363A0D /* LocationListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF752E1C577C0E00363A0D /* LocationListBuilder.m */; };
 		15CF75311C577E3900363A0D /* JSONCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF75301C577E3900363A0D /* JSONCommunication.m */; };
-		15CF75331C577ED700363A0D /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF75321C577ED700363A0D /* Location.m */; };
 		15CF75371C5782FB00363A0D /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF75361C5782FB00363A0D /* LocationManager.m */; };
+		15CF753A1C579C9300363A0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CF75391C579C9300363A0D /* Foundation.framework */; };
+		15CF753C1C57A12000363A0D /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF753B1C57A12000363A0D /* Location.m */; };
+		15CF753F1C57A2AD00363A0D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF753E1C57A2AD00363A0D /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,11 +69,14 @@
 		15CF752D1C577BEB00363A0D /* LocationListBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationListBuilder.h; sourceTree = "<group>"; };
 		15CF752E1C577C0E00363A0D /* LocationListBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationListBuilder.m; sourceTree = "<group>"; };
 		15CF75301C577E3900363A0D /* JSONCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONCommunication.m; sourceTree = "<group>"; };
-		15CF75321C577ED700363A0D /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		15CF75341C577EE900363A0D /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		15CF75351C5782D600363A0D /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		15CF75361C5782FB00363A0D /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		15CF75381C57832900363A0D /* LocationManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManagerDelegate.h; sourceTree = "<group>"; };
+		15CF75391C579C9300363A0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15CF753B1C57A12000363A0D /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		15CF753D1C57A2AD00363A0D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		15CF753E1C57A2AD00363A0D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CF753A1C579C9300363A0D /* Foundation.framework in Frameworks */,
 				15CF75291C57794000363A0D /* CoreLocation.framework in Frameworks */,
 				15CF75211C57454A00363A0D /* MapKit.framework in Frameworks */,
 			);
@@ -130,6 +136,8 @@
 				15CF74F31C557DCB00363A0D /* ViewController.h */,
 				15CF74F41C557DCB00363A0D /* ViewController.m */,
 				15CF74F61C557DCB00363A0D /* Main.storyboard */,
+				15CF753D1C57A2AD00363A0D /* DetailViewController.h */,
+				15CF753E1C57A2AD00363A0D /* DetailViewController.m */,
 				15CF74F91C557DCB00363A0D /* Assets.xcassets */,
 				15CF74FB1C557DCB00363A0D /* LaunchScreen.storyboard */,
 				15CF74FE1C557DCB00363A0D /* Info.plist */,
@@ -137,11 +145,11 @@
 				15CF75271C57765D00363A0D /* LocationListCell.h */,
 				15CF75251C5775E000363A0D /* LocationListCell.m */,
 				15CF75341C577EE900363A0D /* Location.h */,
-				15CF75321C577ED700363A0D /* Location.m */,
-				15CF752B1C577A0100363A0D /* JSONCommunicationDelegate.h */,
+				15CF753B1C57A12000363A0D /* Location.m */,
 				15CF75381C57832900363A0D /* LocationManagerDelegate.h */,
 				15CF75351C5782D600363A0D /* LocationManager.h */,
 				15CF75361C5782FB00363A0D /* LocationManager.m */,
+				15CF752B1C577A0100363A0D /* JSONCommunicationDelegate.h */,
 				15CF752C1C577AA200363A0D /* JSONCommunication.h */,
 				15CF75301C577E3900363A0D /* JSONCommunication.m */,
 				15CF752D1C577BEB00363A0D /* LocationListBuilder.h */,
@@ -179,6 +187,7 @@
 		15CF752A1C57795A00363A0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15CF75391C579C9300363A0D /* Foundation.framework */,
 				15CF75281C57794000363A0D /* CoreLocation.framework */,
 				15CF75201C57454A00363A0D /* MapKit.framework */,
 			);
@@ -321,7 +330,8 @@
 				15CF75311C577E3900363A0D /* JSONCommunication.m in Sources */,
 				15CF74F21C557DCB00363A0D /* AppDelegate.m in Sources */,
 				15CF75261C5775E000363A0D /* LocationListCell.m in Sources */,
-				15CF75331C577ED700363A0D /* Location.m in Sources */,
+				15CF753C1C57A12000363A0D /* Location.m in Sources */,
+				15CF753F1C57A2AD00363A0D /* DetailViewController.m in Sources */,
 				15CF74EF1C557DCB00363A0D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

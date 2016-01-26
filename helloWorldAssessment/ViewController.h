@@ -11,7 +11,7 @@
 
 @interface ViewController : UIViewController
 
-@property (weak     , nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
